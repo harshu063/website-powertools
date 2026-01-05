@@ -33,30 +33,36 @@
       <a href="#hero" class="logo-link">
         <span class="logo-text">Shree Hardware</span>
       </a>
-
-      <!-- Mobile toggle -->
-      <button class="nav-toggle" aria-label="Open menu">&#9776;</button>
-
       <!-- Navigation -->
-      <nav class="primary-nav" aria-label="Primary navigation">
-        <div class="nav-backdrop"></div>
+      <nav class="primary-nav">
+  <button class="nav-toggle" aria-label="Toggle navigation">
+    ☰
+  </button>
 
-        <div class="nav-inner">
-          <button class="nav-close" aria-label="Close menu">✕</button>
+  <ul class="nav-list">
+    <li><a href="index.html">Home</a></li>
+    <li><a href="products.html" class="active">Products</a></li>
+    <li><a href="index.html#brands">Brands</a></li>
+    <li><a href="index.html#contact">Contact</a></li>
+    <li class="mobile-only">
+      <a href="https://wa.me/919414301696"
+         target="_blank"
+         rel="noopener"
+         class="btn btn-primary">
+        WhatsApp Enquiry
+      </a>
+    </li>
+  </ul>
 
-          <ul class="nav-list">
-            <li><a href="#hero">Home</a></li>
-            <li><a href="#brands">Brands</a></li>
-            <li><a href="products.html">Products</a></li>
-            <li><a href="#contact">Contact</a></li>
-          </ul>
+  <!-- Desktop CTA -->
+  <a href="https://wa.me/919414301696"
+     class="btn btn-primary nav-cta-desktop"
+     target="_blank"
+     rel="noopener">
+    WhatsApp Enquiry
+  </a>
+</nav>
 
-          <a href="https://wa.me/919414301696?text=Hello%20Shree%20Hardware%2C%20I%20am%20a%20retailer%20looking%20for%20wholesale%20tool%20suppliers."
-            class="btn btn-primary nav-cta-mobile" target="_blank" rel="noopener">
-            WhatsApp Enquiry
-          </a>
-        </div>
-      </nav>
 
     </div>
   </header>
@@ -82,16 +88,19 @@
         Serving Retailers Across Jodhpur & Nearby Regions
       </p>
 
-      <div class="hero-ctas">
-        <a href="tel:+919414301696" class="btn btn-outline">
-          📞 Call Now
-        </a>
+      <div class="hero-cta">
+  <a href="https://wa.me/919414301696"
+     class="btn btn-primary"
+     target="_blank" rel="noopener">
+    WhatsApp Retail Enquiry
+  </a>
 
-        <a href="https://wa.me/919414301696?text=Hello%20Shree%20Hardware%2C%20I%20am%20a%20retailer%20interested%20in%20wholesale%20tool%20supplies."
-          class="btn btn-primary" target="_blank" rel="noopener">
-          💬 WhatsApp Retail Enquiry
-        </a>
-      </div>
+  <a href="tel:+919414301696"
+     class="btn btn-secondary">
+    Call Now
+  </a>
+</div>
+
 
       <div class="hero-trust">
         <span>✔ Authorised Dealer</span>
