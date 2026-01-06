@@ -578,6 +578,23 @@ a {
     .contact-grid {
         grid-template-columns: 1fr;
     }
+    /* =========================
+   MOBILE BRAND LOGO FIX
+   ========================= */
+
+  .brands-grid {
+    grid-template-columns: repeat(2, 1fr); /* fewer columns */
+    gap: 20px;
+  }
+
+  .brand-card {
+    padding: 16px;
+  }
+
+  .brand-card img {
+    max-width: 145px;   /* increase logo size */
+    max-height: 95px;
+  }
 }
 
 .nav-list a.active {
