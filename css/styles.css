@@ -233,7 +233,7 @@ a {
 ================================ */
 
 .brands-section {
-    padding: 4.5rem 0;
+    padding: 3rem 0;
     background: #f8fafc;
 }
 
@@ -255,7 +255,7 @@ a {
 
 .brands-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+    grid-template-columns:repeat(2, 1fr);
     gap: 2rem;
     align-items: center;
 }
@@ -263,12 +263,22 @@ a {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1rem;
-  border-radius: 6px;
   background: #fff;
   cursor: pointer;
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   text-decoration: none;
+  width: 100%;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: 500;
+  color: #475569;
+  margin: 1.25rem auto 2.5rem;
+}
+.brand-card img{
+    object-fit: contain;
+    max-height: 90px;             /* THIS is the real fix */
+    max-width: 100%; 
+
 }
 
 .brand-card:hover {
@@ -573,6 +583,24 @@ a {
 .contact-map iframe {
     border-radius: 12px;
 }
+.brands-instruction {
+  text-align: center;
+  font-style: italic;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  margin: 1.25rem auto 2.5rem;
+  align-items: center;
+}
+@media (max-width: 768px) {
+  .brands-instruction {
+    font-size: 0.9rem;
+    margin-bottom: 1.5rem;
+     max-width: 120px;   /* was probably ~80–90 */
+    max-height: 80px;
+  }
+}
+
 
 @media (max-width: 900px) {
     .contact-grid {
@@ -589,6 +617,7 @@ a {
 
   .brand-card {
     padding: 16px;
+    height: 110px;
   }
 
   .brand-card img {
@@ -607,7 +636,6 @@ a {
 ================================ */
 
 .assurance-section {
-    padding: 4rem 0;
     background: #ffffff;
 }
 
